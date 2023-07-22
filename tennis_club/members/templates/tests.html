@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests</title>
+</head>
+<body>
+    <h1>Tests</h1>
+    <ul>
+        {% for member in members %}
+        <li {% if forloop.last %}
+            style='background-color: lightgray;'
+            {% endif %}
+        >{{ forloop.counter }} - {{ member.firstname }}</li>
+        {% empty %}
+        <h2>No Members</h2>
+        {% endfor %}
+    </ul>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        {% for member in members %}
+        <tr>
+            <td>{{ member.id }}</td>
+            <td>{{ member.firstname }}</td>
+            <td>{{ member.lastname }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% comment 'just testing'%}
+    <p>testing views.py to see the {# code #}</p>
+    {% endcomment %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'template.html' %}
+{% block content %}
+<h1>{% block title %}Tennis Club - List of the members{% endblock %}</h1>
+<p><a href="/">home</a></p>
+<ul>
+    {% for member in members %}
+        <li onclick="window.location = 'details/{{ member.id }}'">
+            <!-- <a href="details/{{ member.id }}">
+                {{ member.firstname }} {{ member.lastname }}
+            </a> -->
+            {{ member.firstname }} {{ member.lastname }}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

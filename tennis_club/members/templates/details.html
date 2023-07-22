@@ -1,0 +1,13 @@
+{% extends 'template.html' %}
+{% block content %}
+<div class="mycard">
+    <h1>{% block title %} {{ member.firstname }} {{ member.lastname }} {% endblock %}</h1>
+    {% if member.phone %}
+    <p>Phone: {{ member.phone }}</p>
+    {% endif %}
+    {% if member.joined_date %}
+    <p>Member since: {{ member.joined_date }}</p>
+    {% endif %}
+</div>
+<p>Go to <a href="/members">members list</a></p>
+{% endblock %}

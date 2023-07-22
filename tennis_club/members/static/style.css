@@ -1,0 +1,66 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.topnav {
+    background-color: #375BEE;
+    color: #FFFFFF;
+    padding: 10px;
+}
+.topnav a:link, .topnav a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 1em;
+}
+.mycard {
+    background-color: #F1F1F1;
+    background-image: linear-gradient(to bottom, #275BEE, #4D70EF);
+    background-size: 100% 100px;
+    background-repeat: no-repeat;
+    margin: 40px auto;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 5px 6px -1px rgba(50, 50, 50, 0.22);
+    padding: 20px; 
+}
+.mycard h1 {
+    text-align: center;
+    margin: 20px 0 60px 0;
+    color: #FFFFFF;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to right, #275BEE, #4D70EF);
+    background-size: 50px 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform .25s;
+    border-radius: 5px;
+    box-shadow: 0 5px 6px -1px rgba(50, 50, 50, 0.22);
+    padding: 15px;
+    padding-left: 60px;
+    margin-top: 5px;
+}
+li:hover {
+    transform: scale(1.1);
+}
+a:link, a:visited {
+    color: #275BEE;
+}
+.main, .main h1 {
+    text-align: center;
+    color: #275BEE;
+}

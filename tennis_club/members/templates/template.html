@@ -1,0 +1,24 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>{% block title %}{% endblock%}</title>
+</head>
+<body>
+    <nav class="topnav">
+        <a href="/">Home</a>
+        <a href="/members">Members</a>
+    </nav>
+
+    <hr>
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+    <hr>
+    <footer>&copy; no copyright - 2200</footer>
+</body>
+</html>
